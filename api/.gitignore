@@ -1,0 +1,11 @@
+#IDE
+.vscode
+# compiled output
+/dist
+/node_modules
+
+# environment
+.env
+
+# log
+/logs

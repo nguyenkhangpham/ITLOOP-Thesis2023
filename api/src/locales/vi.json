@@ -1,0 +1,9 @@
+{
+  "hello": "Hello api!!",
+  "email_password_incorrect": "Email hoặc mật khẩu không chính xác",
+  "user_already_exists": "Tài khoản đã tồn tại",
+  "user_notfound": "Không tìm thấy người dùng nào",
+  "you_are_not_logged_in": "Vui lòng đăng nhập",
+  "token_expires": "Token đã hết hạn",
+  "not_have_access": "Bạn không có quyền truy cập"
+}

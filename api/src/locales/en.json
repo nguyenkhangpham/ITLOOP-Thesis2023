@@ -1,0 +1,9 @@
+{
+  "hello": "Hello api!!",
+  "email_password_incorrect": "Email or password incorrect",
+  "user_already_exists": "User already exists",
+  "user_notfound": "User not found",
+  "you_are_not_logged_in": "You are not logged in",
+  "token_expires": "Token_expires",
+  "not_have_access": "Not have access"
+}

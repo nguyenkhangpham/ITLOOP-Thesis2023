@@ -1,0 +1,57 @@
+{
+  "name": "polyclinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node -r ./tsconfig-paths.js dist/src/index.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migrate:create": "yarn typeorm migration:create",
+    "migrate:generate": "yarn typeorm migration:generate -d typeorm.config.ts",
+    "migrate:run": "yarn typeorm migration:run -d typeorm.config.ts",
+    "migrate:show": "yarn typeorm migration:show -d typeorm.config.ts",
+    "migrate:revert": "yarn typeorm migration:revert -d typeorm.config.ts",
+    "seed": "ts-node ./node_modules/typeorm-extension/dist/cli/index.js seed -d typeorm.config.ts"
+  },
+  "keywords": [
+    "polyclinic"
+  ],
+  "author": "Tran Thanh Tung",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "i18n": "^0.15.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.5",
+    "typeorm": "^0.3.17",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.9.4",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "morgan": "^1.10.0",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typeorm-extension": "^2.7.0",
+    "typescript": "^5.3.2"
+  }
+}
